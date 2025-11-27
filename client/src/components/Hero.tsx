@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import heroBg from "@assets/generated_images/abstract_data_visualization_background_with_geometric_shapes_and_subtle_gradients.png";
-import profileImg from "@assets/generated_images/professional_headshot_of_a_young_male_data_analyst.png";
+import profileImg from "@assets/anshul_profile.jpg";
 import { Download, ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -35,7 +35,7 @@ export default function Hero() {
           <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
             I combine technology, data, and people insights to solve complex business problems and drive organizational success.
           </p>
-          
+
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="rounded-full px-8" asChild>
               <a href="#projects">
@@ -60,7 +60,7 @@ export default function Hero() {
             {/* Decorative Circle */}
             <div className="absolute inset-0 rounded-full border-2 border-primary/20 scale-110 animate-pulse" />
             <div className="absolute inset-0 rounded-full border border-primary/10 scale-125" />
-            
+
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-background shadow-2xl relative z-10">
               <img
                 src={profileImg}
@@ -68,9 +68,9 @@ export default function Hero() {
                 className="w-full h-full object-cover"
               />
             </div>
-            
+
             {/* Floating Badge */}
-            <motion.div 
+            <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1 }}
