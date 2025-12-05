@@ -27,13 +27,32 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const formData = new FormData();
+      formData.append("form-name", "contact");
+      formData.append("name", values.name);
+      formData.append("email", values.email);
+      formData.append("message", values.message);
+
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again or email me directly.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
@@ -105,7 +124,8 @@ export default function Contact() {
             <Card className="border-border shadow-lg">
               <CardContent className="p-8">
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" data-netlify="true" name="contact">
+                    <input type="hidden" name="form-name" value="contact" />
                     <FormField
                       control={form.control}
                       name="name"
