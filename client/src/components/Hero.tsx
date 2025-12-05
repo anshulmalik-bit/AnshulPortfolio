@@ -54,9 +54,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative flex justify-center"
+          className="relative flex justify-center pb-12 md:pb-0"
         >
-          <div className="relative w-80 h-80 md:w-96 md:h-96">
+          <div className="relative w-64 h-64 md:w-96 md:h-96">
             {/* Decorative Circle */}
             <div className="absolute inset-0 rounded-full border-2 border-primary/20 scale-110 animate-pulse" />
             <div className="absolute inset-0 rounded-full border border-primary/10 scale-125" />
@@ -65,7 +65,8 @@ export default function Hero() {
               <img
                 src={profileImg}
                 alt="Anshul Malik"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 20%' }}
               />
             </div>
 
