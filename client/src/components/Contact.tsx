@@ -51,8 +51,8 @@ export default function Contact() {
             </p>
 
             <div className="space-y-6">
-              <a 
-                href="mailto:anshul.malik@example.com" 
+              <a
+                href="mailto:anshulmalik694@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors group"
               >
                 <div className="bg-primary/10 p-3 rounded-full text-primary group-hover:scale-110 transition-transform">
@@ -60,13 +60,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email Me</p>
-                  <p className="font-semibold">anshul.malik@example.com</p>
+                  <p className="font-semibold">anshulmalik694@gmail.com</p>
                 </div>
               </a>
 
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/anshul-malik-33584622a/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors group"
               >
@@ -79,9 +79,9 @@ export default function Contact() {
                 </div>
               </a>
 
-              <a 
-                href="https://github.com" 
-                target="_blank" 
+              <a
+                href="https://github.com/anshulmalik-bit"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors group"
               >
@@ -90,7 +90,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Check my Code</p>
-                  <p className="font-semibold">github.com/anshulmalik</p>
+                  <p className="font-semibold">github.com/anshulmalik-bit</p>
                 </div>
               </a>
             </div>
@@ -139,10 +139,10 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Message</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder="Hi Anshul, I'd like to discuss..." 
+                            <Textarea
+                              placeholder="Hi Anshul, I'd like to discuss..."
                               className="min-h-[120px] bg-background"
-                              {...field} 
+                              {...field}
                             />
                           </FormControl>
                           <FormMessage />
