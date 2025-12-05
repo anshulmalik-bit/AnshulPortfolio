@@ -43,7 +43,7 @@ export default function Hero() {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/Anshul Resume.pdf" download>
                 Download Resume <Download className="ml-2 h-4 w-4" />
               </a>
             </Button>
