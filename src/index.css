@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .clip-path-reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+/* Custom interactive components */
+@layer components {
+  .btn-magnetic {
+    @apply relative overflow-hidden inline-flex items-center justify-center font-sans font-bold transition-transform duration-300 ease-magnetic shadow-sm;
+    will-change: transform;
+  }
+
+  .btn-magnetic:hover {
+    transform: scale(1.03) translateY(-1px);
+  }
+
+  .btn-accent {
+    @apply bg-accent text-primary px-8 py-4 rounded-full;
+  }
+
+  .btn-accent::after {
+    content: '';
+    @apply absolute inset-0 bg-dark transform scale-x-0 origin-left transition-transform duration-500 ease-magnetic;
+    z-index: -1;
+  }
+
+  .btn-accent:hover::after {
+    @apply scale-x-100;
+  }
+
+  .card-border {
+    @apply border border-dark/10 shadow-xl;
+  }
+}
