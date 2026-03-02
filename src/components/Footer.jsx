@@ -3,18 +3,18 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-dark text-primary pt-24 pb-12 px-6 rounded-t-[4rem] relative z-50">
+        <footer className="w-full bg-dark text-primary pt-24 pb-12 px-6 rounded-t-[2rem] md:rounded-t-[4rem] relative z-50">
             <div className="max-w-7xl mx-auto flex flex-col gap-24">
 
                 {/* Main CTA */}
                 <div className="flex flex-col md:flex-row justify-between items-end border-b border-primary/20 pb-16">
                     <div className="max-w-xl mb-12 md:mb-0">
-                        <h2 className="font-sans font-bold text-5xl md:text-7xl uppercase tracking-tighter mb-4">Ready to Optimize?</h2>
-                        <p className="font-serif italic text-2xl text-primary/70">Engineering a scalable, data-backed human system.</p>
+                        <h2 className="font-sans font-bold text-[clamp(2.5rem,8vw,5rem)] md:text-7xl uppercase tracking-tighter mb-4">Ready to Optimize?</h2>
+                        <p className="font-serif italic text-xl md:text-2xl text-primary/70">Engineering a scalable, data-backed human system.</p>
                     </div>
                     <a
                         href="mailto:anshulmalik694@gmail.com"
-                        className="group font-sans font-bold text-dark bg-primary px-8 py-4 rounded-full flex items-center gap-2 hover:bg-accent hover:text-primary transition-colors duration-300 ease-magnetic"
+                        className="group font-sans font-bold text-dark bg-primary px-8 py-4 rounded-full flex flex-col sm:flex-row justify-center w-full sm:w-auto items-center gap-2 hover:bg-accent hover:text-primary transition-colors duration-300 ease-magnetic"
                     >
                         Contact Anshul Malik <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </a>

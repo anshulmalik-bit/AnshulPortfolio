@@ -105,7 +105,7 @@ export default function Protocol() {
                     ref={el => cardsRef.current[i] = el}
                     className="h-screen w-full flex items-center justify-center sticky top-0"
                 >
-                    <div className="w-[90%] max-w-5xl h-[80vh] bg-primary rounded-[3rem] border border-dark/10 shadow-2xl flex flex-col md:flex-row items-center p-12 md:p-24 overflow-hidden relative">
+                    <div className="w-[90%] max-w-5xl h-[80vh] bg-primary rounded-[2rem] md:rounded-[3rem] border border-dark/10 shadow-2xl flex flex-col md:flex-row items-center p-8 md:p-24 overflow-hidden relative">
                         <div className="absolute top-10 right-10 font-mono text-xl tracking-tighter text-dark/20 hidden md:block">
                             PHASE // {p.phase}
                         </div>
@@ -118,8 +118,8 @@ export default function Protocol() {
                             <span className="font-mono text-sm uppercase tracking-widest text-dark/50 bg-dark/5 w-fit px-3 py-1 rounded">
                                 Phase {p.phase}
                             </span>
-                            <h2 className="font-sans font-bold text-4xl md:text-5xl text-dark leading-tight">{p.title}</h2>
-                            <p className="font-serif italic text-dark/70 text-xl md:text-2xl leading-relaxed">
+                            <h2 className="font-sans font-bold text-[clamp(2rem,6vw,4rem)] md:text-5xl text-dark leading-tight">{p.title}</h2>
+                            <p className="font-serif italic text-dark/70 text-lg md:text-2xl leading-relaxed">
                                 {p.desc}
                             </p>
                         </div>

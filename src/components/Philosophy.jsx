@@ -64,13 +64,13 @@ export default function Philosophy() {
             ></div>
 
             <div className="relative z-10 w-full max-w-5xl mx-auto px-6 flex flex-col gap-12">
-                <p className="font-sans text-xl md:text-2xl text-primary/70 max-w-2xl tracking-tight leading-relaxed">
+                <p className="font-sans text-lg md:text-2xl text-primary/70 max-w-2xl tracking-tight leading-relaxed">
                     {"Most HR focuses on: Subjective intuition and standard checklists.".split(" ").map((w, i) => (
                         <span key={i} className="inline-block mr-[0.3em] opacity-0 translate-y-[20px] reveal-word-1">{w}</span>
                     ))}
                 </p>
 
-                <h2 className="font-serif italic text-4xl md:text-[5rem] text-primary leading-[1.1] pb-4">
+                <h2 className="font-serif italic text-[clamp(2.5rem,8vw,5rem)] text-primary leading-[1.1] pb-4">
                     {"We focus on: Architectural integrity and".split(" ").map((w, i) => (
                         <span key={`a-${i}`} className="inline-block mr-[0.25em] opacity-0 translate-y-[20px] reveal-word-2">{w}</span>
                     ))}

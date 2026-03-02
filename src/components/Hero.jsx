@@ -56,10 +56,10 @@ export default function Hero() {
 
             <div className="relative z-20 w-full max-w-7xl mx-auto px-6 pb-20 md:pb-32 flex flex-col justify-end">
                 <h1 className="flex flex-col text-primary leading-[0.9] tracking-tighter mb-8">
-                    <span className="hero-reveal font-sans font-bold text-6xl md:text-[8rem] uppercase">
+                    <span className="hero-reveal font-sans font-bold text-[clamp(4rem,12vw,8rem)] uppercase">
                         OPTIMIZE
                     </span>
-                    <span className="hero-reveal font-serif italic text-7xl md:text-[11rem] -mt-2 md:-mt-8 text-primary shadow-dark/50 drop-shadow-xl">
+                    <span className="hero-reveal font-serif italic text-[clamp(4.5rem,14vw,11rem)] -mt-2 md:-mt-8 text-primary shadow-dark/50 drop-shadow-xl">
                         The Human System.
                     </span>
                 </h1>

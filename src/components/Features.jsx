@@ -163,12 +163,12 @@ export default function Features() {
     return (
         <section id="features" className="w-full py-32 bg-background relative z-10 px-6 scroll-mt-24">
             <div className="max-w-7xl mx-auto">
-                <h2 className="font-sans font-bold text-4xl mb-16 text-dark tracking-tighter">FUNCTIONAL ARTIFACTS</h2>
+                <h2 className="font-sans font-bold text-[clamp(2rem,6vw,4rem)] mb-10 md:mb-16 text-dark tracking-tighter">FUNCTIONAL ARTIFACTS</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     {/* Card 1 */}
-                    <div className="flex flex-col gap-6 bg-primary p-8 rounded-[2rem] border border-dark/10 hover-lift">
+                    <div className="flex flex-col gap-6 bg-primary p-6 lg:p-8 rounded-[2rem] md:rounded-[2rem] border border-dark/10 hover-lift">
                         <DiagnosticShuffler />
                         <div className="flex flex-col h-full justify-between gap-4">
                             <div>
@@ -184,7 +184,7 @@ export default function Features() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="flex flex-col gap-6 bg-primary p-8 rounded-[2rem] border border-dark/10 hover-lift">
+                    <div className="flex flex-col gap-6 bg-primary p-6 lg:p-8 rounded-[2rem] md:rounded-[2rem] border border-dark/10 hover-lift">
                         <TelemetryTypewriter />
                         <div className="flex flex-col h-full justify-between gap-4">
                             <div>
@@ -200,7 +200,7 @@ export default function Features() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="flex flex-col gap-6 bg-primary p-8 rounded-[2rem] border border-dark/10 hover-lift">
+                    <div className="flex flex-col gap-6 bg-primary p-6 lg:p-8 rounded-[2rem] md:rounded-[2rem] border border-dark/10 hover-lift">
                         <CursorProtocolScheduler />
                         <div className="flex flex-col h-full justify-between gap-4">
                             <div>

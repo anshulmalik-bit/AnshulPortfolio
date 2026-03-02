@@ -39,7 +39,7 @@ export default function Navbar() {
                 className="flex items-center justify-between w-full max-w-5xl px-6 py-4 rounded-full border border-transparent transition-colors text-primary"
                 aria-label="Main Navigation"
             >
-                <div className="font-sans font-bold text-xl tracking-tight">Anshul Malik</div>
+                <div className="font-sans font-bold text-lg sm:text-xl tracking-tight shrink-0 mr-4">Anshul Malik</div>
                 <div className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-widest">
                     <a href="#features" className="hover:-translate-y-[1px] transition-transform">Features</a>
                     <a href="#protocol" className="hover:-translate-y-[1px] transition-transform">Protocol</a>
@@ -47,7 +47,7 @@ export default function Navbar() {
                 <a
                     href="/anshul-resume.pdf"
                     download="Anshul_Malik_Resume.pdf"
-                    className="btn-magnetic bg-accent text-primary px-6 py-2 rounded-full font-sans font-bold hidden sm:flex items-center gap-2 group overflow-hidden"
+                    className="btn-magnetic bg-accent text-primary px-4 sm:px-6 py-2 rounded-full font-sans font-bold flex items-center gap-2 group overflow-hidden text-sm sm:text-base ml-auto"
                 >
                     <span className="relative z-10 flex items-center gap-2">Download Resume <ArrowRight size={16} /></span>
                     <div className="absolute inset-0 bg-dark transform scale-x-0 origin-left transition-transform duration-500 ease-magnetic group-hover:scale-x-100 z-0"></div>
